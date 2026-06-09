@@ -1,0 +1,38 @@
+# SENTINELA - dependências do MVP
+# Núcleo (obrigatório)
+numpy>=1.24
+pandas>=2.0
+# Visão computacional
+opencv-python-headless>=4.8
+# Deep Learning (modelo primário) - OPCIONAL: sem TF, o sistema usa fallback numpy
+# automaticamente (visão numpy-centroid, previsão numpy-ar). Habilite conforme a
+# plataforma (descomente a linha aplicável):
+#   Linux / Windows / macOS Intel:
+# tensorflow-cpu>=2.13          # CNN e LSTM
+#   macOS Apple Silicon (M1/M2/M3) - 'tensorflow-cpu' não tem wheel arm64:
+# tensorflow-macos>=2.13        # CNN e LSTM
+# tensorflow-metal>=1.0         # aceleração via GPU Metal (opcional)
+# API
+fastapi>=0.110
+uvicorn>=0.29
+pydantic>=2.6
+# Dashboard
+streamlit>=1.33
+matplotlib>=3.7
+pydeck>=0.8
+# Persistência NoSQL (telemetria de sensores) - mock em memória
+mongomock>=4.1
+# Data lake (data/repository.py grava/lê firms_foci.parquet) - engine Parquet do pandas
+pyarrow>=14.0
+# Voz (alertas) - opcional; há fallback para transcrição em texto
+pyttsx3>=2.90
+# Testes
+pytest>=8.0
+# Ingestão de dados reais (data/ingest.py): usa apenas stdlib (urllib) +
+# numpy/pandas/opencv já listados acima.
+# certifi: CA bundle p/ verificação HTTPS (STAC Earth-search / COG S3). Necessário
+# em Python.framework (macOS), onde os certificados do sistema podem faltar e as
+# miniaturas Sentinel-2 não carregariam (CERTIFICATE_VERIFY_FAILED).
+certifi>=2024.0
+# Opcional, para recorte avançado de COG por janela geográfica (próximo passo):
+# rasterio>=1.3

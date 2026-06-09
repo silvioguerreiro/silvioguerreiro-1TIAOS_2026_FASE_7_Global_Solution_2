@@ -1,0 +1,35 @@
+# Scenario Wokwi (headless) — varia os sensores para cruzar os limiares de fogo.
+# Roda com:
+#   export WOKWI_CLI_TOKEN="wok_..."
+#   wokwi-cli --scenario scenario.test.yaml --timeout 30000 .
+#
+# Objetivo: produzir tanto telemetria normal quanto um evento fogo_confirmado:true,
+# controlando o potenciometro (D35 -> temp) e o sensor de gas (D34 -> fumaca).
+name: telemetria-fogo
+version: 1
+author: SENTINELA - Grupo 37
+
+steps:
+  # 1) Estado calmo: gas baixo, pot. baixo -> fogo_confirmado:false
+  - set-control:
+      part-id: gas1
+      control: NO2
+      value: 5
+  - set-control:
+      part-id: pot1
+      control: position
+      value: 0.2
+  - delay: 6s
+  - wait-serial: "TELEMETRIA ->"
+
+  # 2) Sobe temperatura e fumaca acima dos limiares -> fogo_confirmado:true
+  - set-control:
+      part-id: gas1
+      control: NO2
+      value: 95
+  - set-control:
+      part-id: pot1
+      control: position
+      value: 0.95
+  - delay: 8s
+  - wait-serial: '"fogo_confirmado":true'

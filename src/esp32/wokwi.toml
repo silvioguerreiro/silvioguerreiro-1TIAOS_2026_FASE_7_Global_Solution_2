@@ -1,0 +1,7 @@
+# Wokwi for VS Code — configuração do simulador.
+# Aponta para o firmware COMPILADO (gerado por arduino-cli/PlatformIO).
+# Veja README.md desta pasta para compilar e rodar.
+[wokwi]
+version = 1
+firmware = "build/sensor_solo.ino.bin"
+elf = "build/sensor_solo.ino.elf"

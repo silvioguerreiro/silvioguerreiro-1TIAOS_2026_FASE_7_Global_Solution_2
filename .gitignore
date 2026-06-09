@@ -1,0 +1,33 @@
+# ===== SENTINELA — .gitignore =====
+# Ambientes virtuais (PROIBIDO versionar — regra da GS)
+.venv/
+venv/
+env/
+ENV/
+
+# Cache e bytecode Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Dados gerados em runtime (recriados ao executar)
+src/.sentinela_data/
+*.db
+*.sqlite
+*.sqlite3
+*.wav
+
+# Firmware ESP32 compilado pelo arduino-cli (recriado ao compilar; Wokwi usa via wokwi.toml)
+src/esp32/build/
+
+# Sistema operacional / editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Notas: src/data/lake/ (data lake) é versionado de propósito para rodar
+# offline-first; apenas artefatos de runtime acima ficam de fora.

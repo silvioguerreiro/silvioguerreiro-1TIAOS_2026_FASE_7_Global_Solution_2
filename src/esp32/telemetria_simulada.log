@@ -1,0 +1,37 @@
+=== SENTINELA | Sensor de campo ESP32 ===
+Conectando ao Wi-Fi....
+Wi-Fi conectado. IP: 10.0.0.123
+TELEMETRIA -> {"sensor_id":"ESP32-AMZ-01","lat":-7.21,"lon":-63.05,"temp":25.0,"fumaca":0.03,"fogo_confirmado":false}
+TELEMETRIA -> {"sensor_id":"ESP32-AMZ-01","lat":-7.21,"lon":-63.05,"temp":27.0,"fumaca":0.04,"fogo_confirmado":false}
+TELEMETRIA -> {"sensor_id":"ESP32-AMZ-01","lat":-7.21,"lon":-63.05,"temp":29.0,"fumaca":0.04,"fogo_confirmado":false}
+TELEMETRIA -> {"sensor_id":"ESP32-AMZ-01","lat":-7.21,"lon":-63.05,"temp":32.0,"fumaca":0.05,"fogo_confirmado":false}
+TELEMETRIA -> {"sensor_id":"ESP32-AMZ-01","lat":-7.21,"lon":-63.05,"temp":34.0,"fumaca":0.05,"fogo_confirmado":false}
+TELEMETRIA -> {"sensor_id":"ESP32-AMZ-01","lat":-7.21,"lon":-63.05,"temp":36.0,"fumaca":0.06,"fogo_confirmado":false}
+TELEMETRIA -> {"sensor_id":"ESP32-AMZ-01","lat":-7.21,"lon":-63.05,"temp":39.0,"fumaca":0.07,"fogo_confirmado":false}
+TELEMETRIA -> {"sensor_id":"ESP32-AMZ-01","lat":-7.21,"lon":-63.05,"temp":26.0,"fumaca":0.07,"fogo_confirmado":false}
+TELEMETRIA -> {"sensor_id":"ESP32-AMZ-01","lat":-7.21,"lon":-63.05,"temp":29.0,"fumaca":0.08,"fogo_confirmado":false}
+TELEMETRIA -> {"sensor_id":"ESP32-AMZ-01","lat":-7.21,"lon":-63.05,"temp":35.0,"fumaca":0.72,"fogo_confirmado":true}
+POST -> 200
+TELEMETRIA -> {"sensor_id":"ESP32-AMZ-01","lat":-7.21,"lon":-63.05,"temp":35.0,"fumaca":0.73,"fogo_confirmado":true}
+POST -> 200
+TELEMETRIA -> {"sensor_id":"ESP32-AMZ-01","lat":-7.21,"lon":-63.05,"temp":35.0,"fumaca":0.74,"fogo_confirmado":true}
+POST -> 200
+TELEMETRIA -> {"sensor_id":"ESP32-AMZ-01","lat":-7.21,"lon":-63.05,"temp":35.0,"fumaca":0.75,"fogo_confirmado":true}
+POST -> 200
+TELEMETRIA -> {"sensor_id":"ESP32-AMZ-01","lat":-7.21,"lon":-63.05,"temp":35.0,"fumaca":0.76,"fogo_confirmado":true}
+POST -> 200
+TELEMETRIA -> {"sensor_id":"ESP32-AMZ-01","lat":-7.21,"lon":-63.05,"temp":35.0,"fumaca":0.76,"fogo_confirmado":true}
+POST -> 200
+TELEMETRIA -> {"sensor_id":"ESP32-AMZ-01","lat":-7.21,"lon":-63.05,"temp":35.0,"fumaca":0.77,"fogo_confirmado":true}
+POST -> 200
+TELEMETRIA -> {"sensor_id":"ESP32-AMZ-01","lat":-7.21,"lon":-63.05,"temp":35.0,"fumaca":0.78,"fogo_confirmado":true}
+POST -> 200
+TELEMETRIA -> {"sensor_id":"ESP32-AMZ-01","lat":-7.21,"lon":-63.05,"temp":35.0,"fumaca":0.79,"fogo_confirmado":true}
+POST -> 200
+TELEMETRIA -> {"sensor_id":"ESP32-AMZ-01","lat":-7.21,"lon":-63.05,"temp":35.0,"fumaca":0.62,"fogo_confirmado":true}
+POST -> 200
+TELEMETRIA -> {"sensor_id":"ESP32-AMZ-01","lat":-7.21,"lon":-63.05,"temp":28.0,"fumaca":0.60,"fogo_confirmado":false}
+TELEMETRIA -> {"sensor_id":"ESP32-AMZ-01","lat":-7.21,"lon":-63.05,"temp":36.0,"fumaca":0.58,"fogo_confirmado":false}
+TELEMETRIA -> {"sensor_id":"ESP32-AMZ-01","lat":-7.21,"lon":-63.05,"temp":29.0,"fumaca":0.56,"fogo_confirmado":false}
+TELEMETRIA -> {"sensor_id":"ESP32-AMZ-01","lat":-7.21,"lon":-63.05,"temp":37.0,"fumaca":0.54,"fogo_confirmado":false}
+TELEMETRIA -> {"sensor_id":"ESP32-AMZ-01","lat":-7.21,"lon":-63.05,"temp":30.0,"fumaca":0.53,"fogo_confirmado":false}
